@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="filmepreferate.FilmePreferateController">
+   <children>
+      <Label alignment="TOP_CENTER" layoutX="322.0" layoutY="37.0" text="Filme preferate" textAlignment="CENTER" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TitledPane animated="false" layoutX="27.0" layoutY="91.0" text="Genuri" AnchorPane.leftAnchor="50.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ListView fx:id="genuri" layoutY="-10.0" prefHeight="180.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <TitledPane animated="false" layoutX="50.0" layoutY="305.0" prefHeight="174.0" prefWidth="600.0" text="Filme" AnchorPane.leftAnchor="50.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="tabel" layoutX="14.0" layoutY="-20.0" prefHeight="180.0" prefWidth="352.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="cTitlu" prefWidth="323.9999634027481" text="Titlu" />
+                      <TableColumn fx:id="cAn" prefWidth="110.0" text="An" />
+                        <TableColumn fx:id="cNota" prefWidth="144.00003051757812" text="Nota" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <TitledPane animated="false" layoutX="266.0" layoutY="91.0" prefHeight="206.0" prefWidth="384.0" text="untitled">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="154.0" prefWidth="380.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" maxWidth="50.0" minWidth="50.0" text="Titlu">
+                     <padding>
+                        <Insets left="20.0" top="20.0" />
+                     </padding>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutY="37.0" maxWidth="50.0" minWidth="50.0" prefHeight="37.0" prefWidth="49.0" text="An">
+                     <padding>
+                        <Insets left="20.0" top="20.0" />
+                     </padding>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutY="74.0" maxWidth="50.0" minWidth="50.0" prefHeight="37.0" prefWidth="49.0" text="Nota">
+                     <padding>
+                        <Insets left="20.0" top="20.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="titlu" layoutX="66.0" layoutY="14.0" prefHeight="25.0" prefWidth="285.0" />
+                  <TextField fx:id="an" layoutX="66.0" layoutY="49.0" prefHeight="25.0" prefWidth="285.0" />
+                  <TextField fx:id="nota" layoutX="66.0" layoutY="86.0" prefHeight="25.0" prefWidth="285.0" />
+                  <Button layoutX="66.0" layoutY="131.0" minWidth="90.0" mnemonicParsing="false" onAction="#sterge" text="Sterge" />
+                  <Button layoutX="163.0" layoutY="131.0" minWidth="90.0" mnemonicParsing="false" onAction="#corecteaza" text="Corecteaza" />
+                  <Button layoutX="260.0" layoutY="131.0" minWidth="90.0" mnemonicParsing="false" onAction="#adauga" text="Adauga" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <Button layoutX="634.0" layoutY="14.0" mnemonicParsing="false" onAction="#exit" text="Exit" AnchorPane.rightAnchor="50.0" />
+   </children>
+</AnchorPane>
