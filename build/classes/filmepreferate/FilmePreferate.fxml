@@ -39,7 +39,7 @@
             </AnchorPane>
         </content>
       </TitledPane>
-      <TitledPane animated="false" layoutX="266.0" layoutY="91.0" prefHeight="206.0" prefWidth="384.0" text="untitled">
+      <TitledPane animated="false" layoutX="266.0" layoutY="91.0" prefHeight="206.0" prefWidth="384.0" text="Adauga un film">
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="154.0" prefWidth="380.0">
                <children>
